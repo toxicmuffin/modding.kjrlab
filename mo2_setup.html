@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-image: url(/images/mountains_dark.png);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        
+        body {
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .section-header, .section-content {
+            color: white;
+        }
+
+        .custom-link {
+        color: #fafafa; /* Replace with the desired color value */
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="" width="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Getting Started-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGettingStarted" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Getting Started
+                        </a>
+                        <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdownGettingStarted">
+                            <a class="dropdown-item" href="mo2_setup.html">Mod Organizer 2 Setup (MO2)</a>
+                            <a class="dropdown-item" href="loot_setup.html">LOOT</a>
+                            <a class="dropdown-item" href="">ATLauncher</a>
+                            <!-- Add more options here -->
+                        </div>
+                    </li>
+
+
+                    <!-- Game Mod Guides Dropdown-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGameModGuides" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Game Modding Guides
+                        </a>
+                        <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdownGameModGuides">
+                            <a class="dropdown-item" href="/php/skyrim_mods.php">Skyrim Special Edition</a>
+                            <a class="dropdown-item" href="#">Starfield</a>
+                            <!-- Add more game options here -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+        <!-- Mo2 setup -->
+    <div class="container-xl">
+        <div class="container-fluid d-flex flex-column align-items-center mt-5" style="max-width: 1080px;">
+            <div class="container py-5">
+                <h1 class="mb-5 text-center text-info">Mod Organizer 2 Setup Guide</h1>
+    
+                <!-- Introduction -->
+                <section id="introduction">
+                    <h2 class="text-info">Introduction</h2>
+                    <p class="text-light">Mod Organizer 2 (MO2) is a powerful mod management tool for games built on the Creation Engine. This guide will help you install and setup MO2 for optimal use.</p>
+                </section>
+    
+                <!-- Installation -->
+                <section id="installation">
+                    <h2 class="text-info">Installation</h2>
+                    <ol class="text-light">
+                        <li>Download the latest version of Mod Organizer 2 from <a href="https://github.com/ModOrganizer2/modorganizer/releases" class="custom-link" target="_blank">GitHub</a>.</li>
+                        <li>Extract the downloaded .zip file using a tool like <a href="https://www.7-zip.org/" class="custom-link" target="_blank">7-Zip</a> or <a href="https://www.win-rar.com/" class="custom-link" target="_blank">WinRAR</a>.</li>
+                        <li>Navigate to the extracted folder and run ModOrganizer.exe to start the application.</li>
+                    </ol>
+                </section>
+    
+                <!-- Initial Setup -->
+                <section id="initial_setup">
+                    <h2 class="text-info">Initial Setup</h2>
+                    <p class="text-light">Setting up Mod Organizer 2 (MO2) properly is important to ensure a smooth modding experience. Here's a detailed guide on how to do it:</p>
+                    <ol class="text-light">
+                        <li>
+                            <h4>Create a Separate Modding Folder</h3>
+                            <p>It's recommended to create a dedicated folder for your modding activities, ideally not on your OS drive (typically drive C:). This preserves your data if you ever need to reinstall your OS and helps keep your modding files isolated. An example would be something like D:\Modding or E:\Games\Mods.</p>
+                        </li>
+                        <li>
+                            <h4>Run ModOrganizer.exe</h4>
+                            <p>Navigate to the folder where you extracted MO2 and run ModOrganizer.exe. This will initiate the first-run setup process.</p>
+                        </li>
+                        <li>
+                            <h4>Select the Game</h4>
+                            <p>MO2 will ask you to select the game you want to manage. If your game is not detected automatically, you'll need to navigate to its installation folder manually. Make sure that you select the right game, as MO2 uses game-specific settings and features.</p>
+                        </li>
+                        <li>
+                            <h4>Choose the Mode</h4>
+                            <p>You'll be prompted to choose between Portable and Instance mode. For most users, Portable mode is recommended. This mode keeps all MO2 settings and files in one location, which is easier to manage and backup.</p>
+                        </li>
+                        <li>
+                            <h4>Set the Base Directory</h4>
+                            <p>In the next step, MO2 will ask for a base directory. This is where MO2 will store its data, including mods, profiles, and overwrite data. You should choose the dedicated modding folder you created in the first step. Note that each game managed by MO2 should have its own base directory to avoid conflicts.</p>
+                        </li>
+                        <li>
+                            <h4>Finish the Setup</h4>
+                            <p>Once you've made your selections, click 'OK' to finish the setup. MO2 is now ready to manage your game's mods. All mods installed through MO2 will be stored in the base directory, keeping your game folder clean.</p>
+                        </li>
+                    </ol>
+                </section>
+
+    
+                <!-- Troubleshooting -->
+                <section id="troubleshooting">
+                    <h2 class="text-info">Troubleshooting</h2>
+                    <p class="text-light">If you run into any issues while using Mod Organizer 2, refer to the official <a href="https://github.com/ModOrganizer2/modorganizer/wiki" class="custom-link" target="_blank">MO2 wiki</a> or seek help from the MO2 community on <a href="https://www.reddit.com/r/modorganizer/" class="custom-link" target="_blank">Reddit</a>.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

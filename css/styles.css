@@ -1,0 +1,32 @@
+html {
+    font-size: 20px
+}
+
+body {
+    background-color: #24374a;
+    color: whitesmoke;
+}
+
+.nav-link {
+    transition: all 0.2s;
+    position: relative;
+}
+/*.nav-link:hover {
+    border-bottom: 2px solid #5330ff;
+}*/
+
+.nav-link::after {
+    content:'';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: #5330ff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}

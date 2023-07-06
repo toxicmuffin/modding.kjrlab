@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-image: url(/images/mountains_dark.png);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        
+        body {
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .section-header, .section-content {
+            color: white;
+        }
+
+        .custom-link {
+        color: #fafafa; /* Replace with the desired color value */
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="" width="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Getting Started-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGettingStarted" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Getting Started
+                        </a>
+                        <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdownGettingStarted">
+                            <a class="dropdown-item" href="mo2_setup.html">Mod Organizer 2 Setup (MO2)</a>
+                            <a class="dropdown-item" href="loot_setup.html">LOOT</a>
+                            <a class="dropdown-item" href="#">ATLauncher</a>
+                            <!-- Add more options here -->
+                        </div>
+                    </li>
+
+
+                    <!-- Game Mod Guides Dropdown-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGameModGuides" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Game Modding Guides
+                        </a>
+                        <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdownGameModGuides">
+                            <a class="dropdown-item" href="/php/skyrim_mods.php">Skyrim Special Edition</a>
+                            <a class="dropdown-item" href="#">Starfield</a>
+                            <!-- Add more game options here -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- LOOT setup -->
+<div class="container-xl">
+    <div class="container-fluid d-flex flex-column align-items-center mt-5" style="max-width: 1080px;">
+        <div class="container py-5">
+            <h1 class="mb-5 text-center text-info">LOOT Setup Guide</h1>
+
+            <!-- Introduction -->
+            <section id="introduction">
+                <h2 class="text-info">Introduction</h2>
+                <p class="text-light">Load Order Optimisation Tool (LOOT) is an essential application for managing your mods' load order, resolving conflicts, and providing valuable information about your mods. This guide will assist you in installing, setting up, and using LOOT with Mod Organizer 2 (MO2).</p>
+            </section>
+
+            <!-- Installation -->
+            <section id="installation">
+                <h2 class="text-info">Installation</h2>
+                <ol class="text-light">
+                    <li>Download the latest version of LOOT from the <a href="https://loot.github.io/" class="custom-link" target="_blank">official LOOT website</a>.</li>
+                    <li>Once downloaded, run the installer and follow the instructions. Make sure you install LOOT in a dedicated folder outside of your Program Files directory to avoid potential permission issues.</li>
+                    <li>After installation, run LOOT once to generate necessary files and close it.</li>
+                </ol>
+            </section>
+
+            <!-- Setup With MO2 -->
+            <section id="setup_mo2">
+                <h2 class="text-info">Setup with Mod Organizer 2</h2>
+                <ol class="text-light">
+                    <li>Open MO2 and click the dropdown arrow next to the Run button at the top right.</li>
+                    <li>Select 'Edit...' from the dropdown menu.</li>
+                    <li>In the Modify Executables window, under Title, enter 'LOOT'.</li>
+                    <li>Next to the Binary field, click the folder icon and navigate to your LOOT installation folder. Select the LOOT application and click 'Open'.</li>
+                    <li>Click 'Add' to add LOOT to your list of executables in MO2, then click 'Close'.</li>
+                    <li>LOOT is now set up to run from within MO2. You can launch it using the dropdown menu next to the Run button.</li>
+                </ol>
+            </section>
+
+<!-- Using LOOT -->
+<section id="using_loot">
+    <h2 class="text-info">Using LOOT</h2>
+    <ol class="text-light">
+        <li>With your mods installed through MO2, launch LOOT from the MO2 interface.</li>
+        <li>Before sorting your mods, it's crucial to update the master list. The master list contains metadata for many mods and helps LOOT determine the optimal load order. To do this, select 'Update Masterlist'. LOOT will then fetch the latest version of the master list from the online repository.</li>
+        <li>After updating the master list, click the 'Sort Plugins' at the top.</li>
+        <li>LOOT will analyze your mods and provide a suggested load order. Click 'Apply' to accept LOOT's suggested load order.</li>
+        <li>Close LOOT and return to MO2. Your plugins will now be arranged according to LOOT's recommendations.</li>
+    </ol>
+    <p class="text-light">It's advised to run LOOT and update the master list whenever you install new mods or periodically, to ensure the load order remains optimal and to reduce the risk of conflicts. The master list is continually updated by the community to reflect the latest compatibility information between mods.</p>
+</section>
+
+
+            <!-- Troubleshooting -->
+            <section id="troubleshooting">
+                <h2 class="text-info">Troubleshooting</h2>
+                <p class="text-light">If you encounter any problems while using LOOT, refer to the official <a href="https://loot.github.io/docs/help/LOOT-FAQs.html" class="custom-link" target="_blank">LOOT FAQ</a> or seek help from the LOOT community on <a href="https://www.reddit.com/r/loot/" class="custom-link" target="_blank">Reddit</a>.</p>
+            </section>
+        </div>
+    </div>
+</div>
+
+        
+    
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
