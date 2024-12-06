@@ -13,15 +13,8 @@
 
 
     <style>
-        body {
-            background-image: url(/images/mountains_dark.png);
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-        }
-        
-        body {
-            background-color: #000;
+               body {
+            background-color: #1b1c1c;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
@@ -142,44 +135,67 @@
 
             <h4>Installing SKSE</h4>
             <ul>
+            
+                    <br>
+                        <strong>Quick YouTube Guide:</strong> <a href="https://www.youtube.com/watch?v=mfKpp8Ri9lY&list=PLhvuRv3vONb5Uwb6rAy6y1r_1WB4Pe151&index=4" target="_blank">Video by 
+                        ADHDecent</a>
+                 
+                    <br>
+                    <br>
+                    
+                    
                     <li>
-                        <strong>Step 1:</strong> Download the latest version of SKSE from the official website. Make sure to choose the correct version for Skyrim Special Edition.
+                        <strong>Step 1:</strong> Download the latest version of SKSE from the official website. <code>Make sure to choose the correct version for Skyrim Special Edition</code>
                     </li>
                     <li>
                         <strong>Step 2:</strong> Extract the downloaded files to a temporary location on your computer.
                     </li>
                     <li>
-                        <strong>Step 3:</strong> Copy the necessary files from the extracted SKSE files to your Skyrim Special Edition installation folder (where SkyrimSE.exe is located). These files are typically included in a "Data" folder or similar:
+                        <strong>Step 3:</strong> Copy the necessary files from the extracted SKSE files to your Skyrim Special Edition installation folder (where SkyrimSE.exe is located).
                         <ul>
-                        <li>Copy the files provided in the SKSE download into the root folder of your Skyrim Special Edition installation.</li>
+                        <li>Copy the <code>DLL file, exe file, and Data</code> folder in the SKSE download into the root folder of your Skyrim Special Edition installation.</li>
                         </ul>
                     </li>
                     <li>
-                        <strong>Step 4:</strong> Launch Mod Organizer 2 (MO2) and click on the "Executables" button located on the top toolbar.
+                        <strong>Step 4:</strong> Launch Mod Organizer 2 (MO2)
+                    </li>
+            
+                    <li>
+                    <strong>Step 5:</strong> Click on the "Executables" button in MO2 (represented by two gears: one green, one blue).
                     </li>
                     <li>
-                        <strong>Step 5:</strong> In the "Add/Edit Executables" window, click on the "+" button to add a new executable.
+                    <strong>Step 6:</strong> In the "Add/Edit Executables" window, click on the blue "+" icon at the top left of the window and select <strong>Add from File</strong>.
                     </li>
                     <li>
-                        <strong>Step 6:</strong> Fill in the following information in the "Add/Edit Executable" form:
-                        <ul>
-                            <li><strong>Title:</strong> Enter a name for the executable (e.g., SKSE).</li>
-                            <li><strong>Binary:</strong> Click on the "..." button and browse to the SKSE executable (skse64_loader.exe).</li>
-                            <li><strong>Start in:</strong> Browse to the directory where Skyrim Special Edition is installed (where SkyrimSE.exe is located).</li>
-                        </ul>
+                    <strong>Step 7:</strong> Browse to the SKSE executable (<code>skse64_loader.exe</code>) and select it.
+                    <p><em>Note:</em> The "Binary" field will now be auto-filled with the location of <code>skse64_loader.exe</code>.</p>
                     </li>
                     <li>
-                        <strong>Step 7:</strong> Click "OK" to save the changes and close the "Add/Edit Executables" window.
+                    <strong>Step 8:</strong> Verify the following fields:
+                    <ul>
+                        <li><strong>Title:</strong> Enter a name for the executable (e.g., <code>SKSE</code>).</li>
+                        <li><strong>Binary:</strong> This should already be auto-filled with the path to <code>skse64_loader.exe</code>.</li>
+                        <li><strong>Start in:</strong> Ensure this points to the directory where <code>SkyrimSE.exe</code> is located (your Skyrim Special Edition installation folder).</li>
+                    </ul>
                     </li>
                     <li>
-                        <strong>Step 8:</strong> In Mod Organizer 2, make sure the newly added SKSE executable is selected as the default launcher by clicking on the wrench icon and selecting it from the dropdown list.
+                    <strong>Step 9:</strong> Click <strong>OK</strong> to save the changes and close the "Add/Edit Executables" window.
                     </li>
                     <li>
-                        <strong>Step 9:</strong> Launch Skyrim Special Edition through Mod Organizer 2 by clicking on the "Run" button. This will start the game using SKSE.
+                    <strong>Step 10:</strong> In MO2, ensure the newly added SKSE executable is selected as the default launcher by clicking the wrench icon and selecting it from the dropdown list.
                     </li>
                     <li>
-                        <strong>Step 10:</strong> Verify that SKSE is installed correctly by opening the console in-game (by pressing the tilde key [`~`]) and typing "GetSKSEVersion". If installed properly, it should display the version number.
+                    <strong>Step 11:</strong> Launch Skyrim Special Edition through MO2 by clicking on the <strong>Run</strong> button. This will start the game using SKSE.
                     </li>
+                    <li>
+                    <strong>Step 12:</strong> Verify that SKSE is installed correctly:
+                    <ul>
+                        <li>Open the in-game console by pressing the tilde key (<code>`</code> or <code>~</code>).</li>
+                        <li>Type <code>GetSKSEVersion</code> and press Enter.</li>
+                        <li>If installed properly, the version number of SKSE will be displayed.</li>
+                    </ul>
+                    </li>
+
             </ul>
 
 
