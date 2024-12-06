@@ -297,41 +297,41 @@
                             <li> You may need various Visual Studio and .NET Runtime versions installed please refer to documentation on DynDOLOD if you need them</li>
                         </ul>
 
-                        <h4 class="text-success mt-2">Installation and Setup</h4>
-<p><strong>Step 1:</strong> Download and Install Required plugins from the section above</p>
-<p><strong>Step 2:</strong> <a href="https://www.nexusmods.com/skyrimspecialedition/mods/52897?tab=files" class="custom-link" target="_blank">DynDOLOD Alpha</a> Download, Extract and Place in an easy to find place. I recommend making a "Modding Tools" folder and place it there!</p>
-<p><strong>Step 3:</strong> Now we will add executables to MO2, in Mod Organizer click the green and blue gear box button located at the top. This will open the "Modify Executables" window. Click the "+" and select Add empty</p>
+                                                        <h4 class="text-success mt-2">Installation and Setup</h4>
+                                    <p><strong>Step 1:</strong> Download and Install Required plugins from the section above</p>
+                                    <p><strong>Step 2:</strong> <a href="https://www.nexusmods.com/skyrimspecialedition/mods/52897?tab=files" class="custom-link" target="_blank">DynDOLOD Alpha</a> Download, Extract and Place in an easy to find place. I recommend making a "Modding Tools" folder and place it there!</p>
+                                    <p><strong>Step 3:</strong> Now we will add executables to MO2, in Mod Organizer click the green and blue gear box button located at the top. This will open the "Modify Executables" window. Click the "+" and select Add empty</p>
 
-<ul>
-    <li><strong>Title:</strong> DynDOLOD</li>
-    <li>Click the "..." button on Binary: Go to where you placed DynDOLOD Folder, select DynDOLODx64.exe</li>
-    <li>Apply and save!</li>
-    <li>Repeat the exact process for "TexGen". Just name the title "TexGen". The TexGenx64.exe is in the same folder as the DynDOLOD</li>
-    <li>Apply and save!</li>
-    <li>You now have your executables completed and ready for use</li>
-</ul>
+                                    <ul>
+                                    <li><strong>Title:</strong> DynDOLOD</li>
+                                    <li>Click the "..." button on Binary: Go to where you placed DynDOLOD Folder, select DynDOLODx64.exe</li>
+                                    <li>Apply and save!</li>
+                                    <li>Repeat the exact process for "TexGen". Just name the title "TexGen". The TexGenx64.exe is in the same folder as the DynDOLOD</li>
+                                    <li>Apply and save!</li>
+                                    <li>You now have your executables completed and ready for use</li>
+                                    </ul>
 
-<p><strong>Step 4:</strong> Now we will run both TexGen and DynDOLOD along with placing the outputs</p>
-<p class="text-warning">Do this process at the very end of your modding; this process will require you to have all the mods you want ready to go as it will use that information during the process. Don't forget to add a tree mod before running TexGen and DynDOLOD.</p>
+                                    <p><strong>Step 4:</strong> Now we will run both TexGen and DynDOLOD along with placing the outputs</p>
+                                    <p class="text-warning">Do this process at the very end of your modding; this process will require you to have all the mods you want ready to go as it will use that information during the process. Don't forget to add a tree mod before running TexGen and DynDOLOD.</p>
 
-<p class="lead">TexGen</p>
-<ul>
-    <li><strong>Step 1:</strong> Change executable to TexGen and click the Run button to launch</li>
-    <li><strong>Step 2:</strong> If you have absolutely no idea what you are doing, just leave everything at default and click the "Start" button *This process can take a long time depending on PC specs*</li>
-    <li><strong>Step 3:</strong> When finished, click "Zip & Exit" - failure to do this will make the entire time you spent a waste</li>
-    <li><strong>Step 4:</strong> Head to your DynDOLOD folder you made earlier and you should now see a "TexGen_Output" folder, inside there is a zip. Place this zip into the 'Downloads' tab in the right panel of Mod Organizer</li>
-    <li><strong>Step 5:</strong> You will know TexGen_Output is installed once you see it in your list on the left. DO NOT FORGET TO CHECK MARK the TexGen output in Mod Organizer before moving to the next step</li>
-</ul>
+                                    <p class="lead">TexGen</p>
+                                    <ul>
+                                    <li><strong>Step 1:</strong> Change executable to TexGen and click the Run button to launch</li>
+                                    <li><strong>Step 2:</strong> If you have absolutely no idea what you are doing, just leave everything at default and click the "Start" button *This process can take a long time depending on PC specs*</li>
+                                    <li><strong>Step 3:</strong> When finished, click "Zip & Exit" - failure to do this will make the entire time you spent a waste</li>
+                                    <li><strong>Step 4:</strong> Head to your DynDOLOD folder you made earlier and you should now see a "TexGen_Output" folder, inside there is a zip. Place this zip into the 'Downloads' tab in the right panel of Mod Organizer</li>
+                                    <li><strong>Step 5:</strong> You will know TexGen_Output is installed once you see it in your list on the left. DO NOT FORGET TO CHECK MARK the TexGen output in Mod Organizer before moving to the next step</li>
+                                    </ul>
 
-<p class="lead">DynDOLOD</p>
-<ul>
-    <li><strong>Step 1:</strong> Change executable to DynDOLOD and click the Run button to launch</li>
-    <li><strong>Step 2:</strong> Select Worldspaces applicable to you (most likely just check all of them) and then select the medium preset button</li>
-    <li><strong>Step 3:</strong> If you have absolutely no idea what you are doing, just leave everything at default and click the "Start DynDOLOD" button *This process can take a MUCH LONGER time depending on PC specs and settings (mine takes up to 40 MIN!)*</li>
-    <li><strong>Step 4:</strong> When finished, click "Zip & Exit" - failure to do this will make the entire time you spent a waste</li>
-    <li><strong>Step 5:</strong> Head to your DynDOLOD folder you made earlier and you should now see a "DynDOLOD_Output" folder, inside there is a zip. Place this zip into the 'Downloads' tab in the right panel of Mod Organizer</li>
-    <li><strong>Step 6:</strong> Enable DynDOLOD_Output in your mod list</li>
-</ul>
+                                    <p class="lead">DynDOLOD</p>
+                                    <ul>
+                                    <li><strong>Step 1:</strong> Change executable to DynDOLOD and click the Run button to launch</li>
+                                    <li><strong>Step 2:</strong> Select Worldspaces applicable to you (most likely just check all of them) and then select the medium preset button</li>
+                                    <li><strong>Step 3:</strong> If you have absolutely no idea what you are doing, just leave everything at default and click the "Start DynDOLOD" button *This process can take a MUCH LONGER time depending on PC specs and settings (mine takes up to 40 MIN!)*</li>
+                                    <li><strong>Step 4:</strong> When finished, click "Zip & Exit" - failure to do this will make the entire time you spent a waste</li>
+                                    <li><strong>Step 5:</strong> Head to your DynDOLOD folder you made earlier and you should now see a "DynDOLOD_Output" folder, inside there is a zip. Place this zip into the 'Downloads' tab in the right panel of Mod Organizer</li>
+                                    <li><strong>Step 6:</strong> Enable DynDOLOD_Output in your mod list</li>
+                                    </ul>
 
 
                         <p class="text-danger lead">You will have to repeat this process every single time you change a vegetation mod (trees, grass etc). If you have to run again, remember to uncheck and delete the Output files from your mod list entirely and start fresh</p>
