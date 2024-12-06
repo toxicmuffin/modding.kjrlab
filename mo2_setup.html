@@ -11,14 +11,7 @@
 
     <style>
         body {
-            background-image: url(/images/mountains_dark.png);
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-        }
-        
-        body {
-            background-color: #000;
+            background-color: #1b1c1c;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
@@ -104,34 +97,79 @@
                 <!-- Initial Setup -->
                 <section id="initial_setup">
                     <h2 class="text-info">Initial Setup</h2>
-                    <p class="text-light">Setting up Mod Organizer 2 (MO2) properly is important to ensure a smooth modding experience. Here's a detailed guide on how to do it:</p>
+                    <p class="text-light">Setting up Mod Organizer 2 (MO2) properly is crucial to ensure a smooth modding experience. Here's a detailed guide, including best practices for organizing your setup:</p>
                     <ol class="text-light">
                         <li>
-                            <h4>Create a Separate Modding Folder</h3>
-                            <p>It's recommended to create a dedicated folder for your modding activities, ideally not on your OS drive (typically drive C:). This preserves your data if you ever need to reinstall your OS and helps keep your modding files isolated. An example would be something like D:\Modding or E:\Games\Mods.</p>
+                            <h4>Create a Dedicated Modding Folder</h4>
+                            <p>It’s strongly recommended to create a dedicated folder for your modding activities, ideally not on your OS drive (usually C:). This keeps your modding files isolated and safe if you need to reinstall your OS. For example, you can use a structure like <code>G:\Modding\Skyrim\modpack1</code>.</p>
+                        </li>
+                        <li>
+                            <h4>Install MO2 as a Portable Instance</h4>
+                            <p>For simplicity and better organization, install MO2 in a dedicated folder within your modding directory, such as <code>G:\Modding\Skyrim\modpack1</code>. Using a portable instance keeps all MO2 files, settings, and mods contained in one location, making backups and maintenance easier.</p>
+                            <p><strong>Note:</strong> MO2 allows only one portable instance per installation. If you plan to manage multiple setups for the same or different games, create a new portable instance in a separate folder (e.g., <code>G:\Modding\Skyrim\modpack2</code>).</p>
                         </li>
                         <li>
                             <h4>Run ModOrganizer.exe</h4>
-                            <p>Navigate to the folder where you extracted MO2 and run ModOrganizer.exe. This will initiate the first-run setup process.</p>
+                            <p>Navigate to the folder where you installed MO2 and run <code>ModOrganizer.exe</code>. Follow the first-run setup prompts to configure MO2 for your game.</p>
                         </li>
                         <li>
                             <h4>Select the Game</h4>
-                            <p>MO2 will ask you to select the game you want to manage. If your game is not detected automatically, you'll need to navigate to its installation folder manually. Make sure that you select the right game, as MO2 uses game-specific settings and features.</p>
-                        </li>
-                        <li>
-                            <h4>Choose the Mode</h4>
-                            <p>You'll be prompted to choose between Portable and Instance mode. For most users, Portable mode is recommended. This mode keeps all MO2 settings and files in one location, which is easier to manage and backup.</p>
+                            <p>MO2 will ask you to select the game you want to manage. If your game isn’t detected automatically, navigate to its installation folder manually. Choose the correct game to ensure proper compatibility and functionality.</p>
                         </li>
                         <li>
                             <h4>Set the Base Directory</h4>
-                            <p>In the next step, MO2 will ask for a base directory. This is where MO2 will store its data, including mods, profiles, and overwrite data. You should choose the dedicated modding folder you created in the first step. Note that each game managed by MO2 should have its own base directory to avoid conflicts.</p>
+                            <p>During setup, MO2 will ask for a base directory where it will store mods, profiles, and other data. Point this to the folder you created earlier, such as <code>G:\Modding\Skyrim\modpack1</code>. Each game or setup should have its own base directory to avoid conflicts.</p>
                         </li>
                         <li>
-                            <h4>Finish the Setup</h4>
-                            <p>Once you've made your selections, click 'OK' to finish the setup. MO2 is now ready to manage your game's mods. All mods installed through MO2 will be stored in the base directory, keeping your game folder clean.</p>
+                            <h4>Understand Profile Limitations</h4>
+                            <p>While MO2 supports profiles for managing different setups within the same instance, profiles can become cluttered if you have a large mod list, as all mods will appear in the list, even if they’re not active. If you frequently use similar mods across profiles, this may be manageable. However, for entirely separate modding setups, creating a new portable instance is recommended.</p>
+                        </li>
+                        <li>
+                            <h4>Complete the Setup</h4>
+                            <p>Once you’ve configured your settings, click <code>OK</code> to finish the setup. MO2 is now ready to manage your mods. Remember, installing mods through MO2 keeps your game folder clean, which simplifies troubleshooting and maintenance.</p>
                         </li>
                     </ol>
                 </section>
+                
+
+<!-- Recommended Things to Do After Installation -->
+<section id="post_install_recommendations">
+    <h2 class="text-info">Recommended Things to Do After Installation</h2>
+    <ol class="text-light">
+        <li>
+            <h4>Enable Dark Mode</h4>
+            <p>MO2 supports a dark mode interface, which is easier on the eyes, especially during long modding sessions. To enable dark mode:</p>
+            <ol>
+                <li>Open MO2 and go to <strong>Settings</strong> by clicking the gear icon in the top menu.
+                    <br>
+                    <img src="/images/mo2_settings_icon.png" alt="MO2 Settings Icon" class="img-fluid mt-2">
+                </li>
+                <li>Navigate to the <strong>Theme</strong> tab.
+                    <br>
+                </li>
+                <li>Choose the <strong>Dark</strong> theme from the dropdown menu.
+                </li>
+                <li>Click <strong>Apply</strong> to save your changes.</li>
+            </ol>
+        </li>
+        <li>
+            <h4>Use Profile-Specific Save Games and INI Files</h4>
+            <p>To ensure your save files and INI configurations are kept separate for each profile:</p>
+            <ol>
+                <li>In MO2, click the <strong>Profiles</strong> dropdown in the top menu.
+                </li>
+                <li>Click <strong>Manage Profiles</strong>.
+                    <br>
+                    <img src="/images/mo2_profile_settings.png" alt="MO2 Manage Profiles" class="img-fluid mt-2">
+                </li>
+                <li>Ensure the options <strong>Use profile-specific save games</strong> and <strong>Use profile-specific ini files</strong> are checked.
+                </li>
+                <li>Click <strong>Close</strong> to save your settings.</li>
+            </ol>
+            <p>These settings prevent conflicts between different setups and ensure a clean and isolated environment for each profile.</p>
+        </li>
+    </ol>
+</section>
 
     
                 <!-- Troubleshooting -->

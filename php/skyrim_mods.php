@@ -13,15 +13,8 @@
 
 
     <style>
-        body {
-            background-image: url(/images/mountains_dark.png);
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-        }
-        
-        body {
-            background-color: #000;
+               body {
+            background-color: #1b1c1c;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
@@ -142,44 +135,67 @@
 
             <h4>Installing SKSE</h4>
             <ul>
+            
+                    <br>
+                        <strong>Quick YouTube Guide:</strong> <a href="https://www.youtube.com/watch?v=mfKpp8Ri9lY&list=PLhvuRv3vONb5Uwb6rAy6y1r_1WB4Pe151&index=4" target="_blank">Video by 
+                        ADHDecent</a>
+                 
+                    <br>
+                    <br>
+                    
+                    
                     <li>
-                        <strong>Step 1:</strong> Download the latest version of SKSE from the official website. Make sure to choose the correct version for Skyrim Special Edition.
+                        <strong>Step 1:</strong> Download the latest version of SKSE from the official website. <code>Make sure to choose the correct version for Skyrim Special Edition</code>
                     </li>
                     <li>
                         <strong>Step 2:</strong> Extract the downloaded files to a temporary location on your computer.
                     </li>
                     <li>
-                        <strong>Step 3:</strong> Copy the necessary files from the extracted SKSE files to your Skyrim Special Edition installation folder (where SkyrimSE.exe is located). These files are typically included in a "Data" folder or similar:
+                        <strong>Step 3:</strong> Copy the necessary files from the extracted SKSE files to your Skyrim Special Edition installation folder (where SkyrimSE.exe is located).
                         <ul>
-                        <li>Copy the files provided in the SKSE download into the root folder of your Skyrim Special Edition installation.</li>
+                        <li>Copy the <code>DLL file, exe file, and Data</code> folder in the SKSE download into the root folder of your Skyrim Special Edition installation.</li>
                         </ul>
                     </li>
                     <li>
-                        <strong>Step 4:</strong> Launch Mod Organizer 2 (MO2) and click on the "Executables" button located on the top toolbar.
+                        <strong>Step 4:</strong> Launch Mod Organizer 2 (MO2)
+                    </li>
+            
+                    <li>
+                    <strong>Step 5:</strong> Click on the "Executables" button in MO2 (represented by two gears: one green, one blue).
                     </li>
                     <li>
-                        <strong>Step 5:</strong> In the "Add/Edit Executables" window, click on the "+" button to add a new executable.
+                    <strong>Step 6:</strong> In the "Add/Edit Executables" window, click on the blue "+" icon at the top left of the window and select <strong>Add from File</strong>.
                     </li>
                     <li>
-                        <strong>Step 6:</strong> Fill in the following information in the "Add/Edit Executable" form:
-                        <ul>
-                            <li><strong>Title:</strong> Enter a name for the executable (e.g., SKSE).</li>
-                            <li><strong>Binary:</strong> Click on the "..." button and browse to the SKSE executable (skse64_loader.exe).</li>
-                            <li><strong>Start in:</strong> Browse to the directory where Skyrim Special Edition is installed (where SkyrimSE.exe is located).</li>
-                        </ul>
+                    <strong>Step 7:</strong> Browse to the SKSE executable (<code>skse64_loader.exe</code>) and select it.
+                    <p><em>Note:</em> The "Binary" field will now be auto-filled with the location of <code>skse64_loader.exe</code>.</p>
                     </li>
                     <li>
-                        <strong>Step 7:</strong> Click "OK" to save the changes and close the "Add/Edit Executables" window.
+                    <strong>Step 8:</strong> Verify the following fields:
+                    <ul>
+                        <li><strong>Title:</strong> Enter a name for the executable (e.g., <code>SKSE</code>).</li>
+                        <li><strong>Binary:</strong> This should already be auto-filled with the path to <code>skse64_loader.exe</code>.</li>
+                        <li><strong>Start in:</strong> Ensure this points to the directory where <code>SkyrimSE.exe</code> is located (your Skyrim Special Edition installation folder).</li>
+                    </ul>
                     </li>
                     <li>
-                        <strong>Step 8:</strong> In Mod Organizer 2, make sure the newly added SKSE executable is selected as the default launcher by clicking on the wrench icon and selecting it from the dropdown list.
+                    <strong>Step 9:</strong> Click <strong>OK</strong> to save the changes and close the "Add/Edit Executables" window.
                     </li>
                     <li>
-                        <strong>Step 9:</strong> Launch Skyrim Special Edition through Mod Organizer 2 by clicking on the "Run" button. This will start the game using SKSE.
+                    <strong>Step 10:</strong> In MO2, ensure the newly added SKSE executable is selected as the default launcher by clicking the wrench icon and selecting it from the dropdown list.
                     </li>
                     <li>
-                        <strong>Step 10:</strong> Verify that SKSE is installed correctly by opening the console in-game (by pressing the tilde key [`~`]) and typing "GetSKSEVersion". If installed properly, it should display the version number.
+                    <strong>Step 11:</strong> Launch Skyrim Special Edition through MO2 by clicking on the <strong>Run</strong> button. This will start the game using SKSE.
                     </li>
+                    <li>
+                    <strong>Step 12:</strong> Verify that SKSE is installed correctly:
+                    <ul>
+                        <li>Open the in-game console by pressing the tilde key (<code>`</code> or <code>~</code>).</li>
+                        <li>Type <code>GetSKSEVersion</code> and press Enter.</li>
+                        <li>If installed properly, the version number of SKSE will be displayed.</li>
+                    </ul>
+                    </li>
+
             </ul>
 
 
@@ -281,41 +297,41 @@
                             <li> You may need various Visual Studio and .NET Runtime versions installed please refer to documentation on DynDOLOD if you need them</li>
                         </ul>
 
-                        <h4 class="text-success mt-2">Installation and Setup</h4>
-<p><strong>Step 1:</strong> Download and Install Required plugins from the section above</p>
-<p><strong>Step 2:</strong> <a href="https://www.nexusmods.com/skyrimspecialedition/mods/52897?tab=files" class="custom-link" target="_blank">DynDOLOD Alpha</a> Download, Extract and Place in an easy to find place. I recommend making a "Modding Tools" folder and place it there!</p>
-<p><strong>Step 3:</strong> Now we will add executables to MO2, in Mod Organizer click the green and blue gear box button located at the top. This will open the "Modify Executables" window. Click the "+" and select Add empty</p>
+                                                        <h4 class="text-success mt-2">Installation and Setup</h4>
+                                    <p><strong>Step 1:</strong> Download and Install Required plugins from the section above</p>
+                                    <p><strong>Step 2:</strong> <a href="https://www.nexusmods.com/skyrimspecialedition/mods/52897?tab=files" class="custom-link" target="_blank">DynDOLOD Alpha</a> Download, Extract and Place in an easy to find place. I recommend making a "Modding Tools" folder and place it there!</p>
+                                    <p><strong>Step 3:</strong> Now we will add executables to MO2, in Mod Organizer click the green and blue gear box button located at the top. This will open the "Modify Executables" window. Click the "+" and select Add empty</p>
 
-<ul>
-    <li><strong>Title:</strong> DynDOLOD</li>
-    <li>Click the "..." button on Binary: Go to where you placed DynDOLOD Folder, select DynDOLODx64.exe</li>
-    <li>Apply and save!</li>
-    <li>Repeat the exact process for "TexGen". Just name the title "TexGen". The TexGenx64.exe is in the same folder as the DynDOLOD</li>
-    <li>Apply and save!</li>
-    <li>You now have your executables completed and ready for use</li>
-</ul>
+                                    <ul>
+                                    <li><strong>Title:</strong> DynDOLOD</li>
+                                    <li>Click the "..." button on Binary: Go to where you placed DynDOLOD Folder, select DynDOLODx64.exe</li>
+                                    <li>Apply and save!</li>
+                                    <li>Repeat the exact process for "TexGen". Just name the title "TexGen". The TexGenx64.exe is in the same folder as the DynDOLOD</li>
+                                    <li>Apply and save!</li>
+                                    <li>You now have your executables completed and ready for use</li>
+                                    </ul>
 
-<p><strong>Step 4:</strong> Now we will run both TexGen and DynDOLOD along with placing the outputs</p>
-<p class="text-warning">Do this process at the very end of your modding; this process will require you to have all the mods you want ready to go as it will use that information during the process. Don't forget to add a tree mod before running TexGen and DynDOLOD.</p>
+                                    <p><strong>Step 4:</strong> Now we will run both TexGen and DynDOLOD along with placing the outputs</p>
+                                    <p class="text-warning">Do this process at the very end of your modding; this process will require you to have all the mods you want ready to go as it will use that information during the process. Don't forget to add a tree mod before running TexGen and DynDOLOD.</p>
 
-<p class="lead">TexGen</p>
-<ul>
-    <li><strong>Step 1:</strong> Change executable to TexGen and click the Run button to launch</li>
-    <li><strong>Step 2:</strong> If you have absolutely no idea what you are doing, just leave everything at default and click the "Start" button *This process can take a long time depending on PC specs*</li>
-    <li><strong>Step 3:</strong> When finished, click "Zip & Exit" - failure to do this will make the entire time you spent a waste</li>
-    <li><strong>Step 4:</strong> Head to your DynDOLOD folder you made earlier and you should now see a "TexGen_Output" folder, inside there is a zip. Place this zip into the 'Downloads' tab in the right panel of Mod Organizer</li>
-    <li><strong>Step 5:</strong> You will know TexGen_Output is installed once you see it in your list on the left. DO NOT FORGET TO CHECK MARK the TexGen output in Mod Organizer before moving to the next step</li>
-</ul>
+                                    <p class="lead">TexGen</p>
+                                    <ul>
+                                    <li><strong>Step 1:</strong> Change executable to TexGen and click the Run button to launch</li>
+                                    <li><strong>Step 2:</strong> If you have absolutely no idea what you are doing, just leave everything at default and click the "Start" button *This process can take a long time depending on PC specs*</li>
+                                    <li><strong>Step 3:</strong> When finished, click "Zip & Exit" - failure to do this will make the entire time you spent a waste</li>
+                                    <li><strong>Step 4:</strong> Head to your DynDOLOD folder you made earlier and you should now see a "TexGen_Output" folder, inside there is a zip. Place this zip into the 'Downloads' tab in the right panel of Mod Organizer</li>
+                                    <li><strong>Step 5:</strong> You will know TexGen_Output is installed once you see it in your list on the left. DO NOT FORGET TO CHECK MARK the TexGen output in Mod Organizer before moving to the next step</li>
+                                    </ul>
 
-<p class="lead">DynDOLOD</p>
-<ul>
-    <li><strong>Step 1:</strong> Change executable to DynDOLOD and click the Run button to launch</li>
-    <li><strong>Step 2:</strong> Select Worldspaces applicable to you (most likely just check all of them) and then select the medium preset button</li>
-    <li><strong>Step 3:</strong> If you have absolutely no idea what you are doing, just leave everything at default and click the "Start DynDOLOD" button *This process can take a MUCH LONGER time depending on PC specs and settings (mine takes up to 40 MIN!)*</li>
-    <li><strong>Step 4:</strong> When finished, click "Zip & Exit" - failure to do this will make the entire time you spent a waste</li>
-    <li><strong>Step 5:</strong> Head to your DynDOLOD folder you made earlier and you should now see a "DynDOLOD_Output" folder, inside there is a zip. Place this zip into the 'Downloads' tab in the right panel of Mod Organizer</li>
-    <li><strong>Step 6:</strong> Enable DynDOLOD_Output in your mod list</li>
-</ul>
+                                    <p class="lead">DynDOLOD</p>
+                                    <ul>
+                                    <li><strong>Step 1:</strong> Change executable to DynDOLOD and click the Run button to launch</li>
+                                    <li><strong>Step 2:</strong> Select Worldspaces applicable to you (most likely just check all of them) and then select the medium preset button</li>
+                                    <li><strong>Step 3:</strong> If you have absolutely no idea what you are doing, just leave everything at default and click the "Start DynDOLOD" button *This process can take a MUCH LONGER time depending on PC specs and settings (mine takes up to 40 MIN!)*</li>
+                                    <li><strong>Step 4:</strong> When finished, click "Zip & Exit" - failure to do this will make the entire time you spent a waste</li>
+                                    <li><strong>Step 5:</strong> Head to your DynDOLOD folder you made earlier and you should now see a "DynDOLOD_Output" folder, inside there is a zip. Place this zip into the 'Downloads' tab in the right panel of Mod Organizer</li>
+                                    <li><strong>Step 6:</strong> Enable DynDOLOD_Output in your mod list</li>
+                                    </ul>
 
 
                         <p class="text-danger lead">You will have to repeat this process every single time you change a vegetation mod (trees, grass etc). If you have to run again, remember to uncheck and delete the Output files from your mod list entirely and start fresh</p>
